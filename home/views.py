@@ -7,4 +7,5 @@ def home(request):
         {"name": 'Arshad', 'age' : 30},
         {"name": 'Kashif', 'age' : 31},
     ]
-    return render(request, 'home/index.html', context={'people':peoples})
+    vegetables = ['Tomato', 'Potato', 'Onion', 'Cabbage']
+    return render(request, 'home/index.html', context={'peoples':peoples, 'vegetables':vegetables})
